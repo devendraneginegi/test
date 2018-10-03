@@ -66,7 +66,7 @@ public class login_test {
 	  
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  
-	  Thread.sleep(4000);
+	  Thread.sleep(40000);
 	  
 	  try {
 		  

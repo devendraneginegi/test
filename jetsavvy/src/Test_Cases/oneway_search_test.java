@@ -9,12 +9,15 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import Page_Object.application_page;
+import Page_Object.home_page;
 import Page_Object.search_page;
+import Page_Object.search_result_page;
 import Testdata.login_data;
 import Testdata.search_data;
 
@@ -59,6 +62,42 @@ public class oneway_search_test {
 	  search_page.destination(driver, destination_airport);
 	  Thread.sleep(4000);
 	  
+	  search_page.date(driver, date);
+	  
+	  Thread.sleep(4000);
+	
+      search_page.time(driver, time);
+      Thread.sleep(4000);
+	 // search_page.submit(driver).click();
+      search_page.passanger(driver).clear();
+	  
+      search_page.passanger(driver).sendKeys(passanger);
+      
+      Thread.sleep(4000);
+      
+      search_page.submit(driver).click();
+      Thread.sleep(40000);
+	  
+      
+try {
+		  
+		  if (search_result_page.aircrafttype(driver).isDisplayed())
+		  {
+			  System.out.println("Search result page display---Test Pass-- " );
+			  search_result_page.aircraftlist(driver);		  
+			  
+		  }
+		  System.out.println("Total search result)"+search_result_page.totalsearchresult(driver).getText());
+	  }
+	  
+	  catch(Exception e)
+	  {
+		  
+	  Assert.fail("search result not display");
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	
+	  }
+	 // Thread.sleep(4000);
 	//  search_page.date(driver).sendKeys(date);
 	  
 	 // search_page.date(driver).sendKeys(date);
@@ -70,7 +109,7 @@ public class oneway_search_test {
 	@AfterTest()
 	public void browserclose()
 	{
-	//	driver.quit();
+		//driver.quit();
 	}
 
 }

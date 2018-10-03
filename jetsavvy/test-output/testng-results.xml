@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50186" started-at="2018-10-01T08:41:25Z" finished-at="2018-10-01T08:42:15Z">
+  <suite name="Default suite" duration-ms="100793" started-at="2018-10-03T10:43:04Z" finished-at="2018-10-03T10:44:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50186" started-at="2018-10-01T08:41:25Z" finished-at="2018-10-01T08:42:15Z">
+    <test name="Default test" duration-ms="100793" started-at="2018-10-03T10:43:04Z" finished-at="2018-10-03T10:44:45Z">
       <class name="Test_Cases.oneway_search_test">
-        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Test_Cases.oneway_search_test@475530b9]" name="openbrowser" is-config="true" duration-ms="3835" started-at="2018-10-01T08:41:25Z" finished-at="2018-10-01T08:41:29Z">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Test_Cases.oneway_search_test@475530b9]" name="openbrowser" is-config="true" duration-ms="1608" started-at="2018-10-03T10:43:04Z" finished-at="2018-10-03T10:43:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openbrowser -->
-        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.oneway_search_test@475530b9]" name="search" duration-ms="25306" started-at="2018-10-01T08:41:29Z" data-provider="search" finished-at="2018-10-01T08:41:54Z">
+        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.oneway_search_test@475530b9]" name="search" duration-ms="99153" started-at="2018-10-03T10:43:05Z" data-provider="search" finished-at="2018-10-03T10:44:45Z">
           <params>
             <param index="0">
               <value>
@@ -20,58 +20,29 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[ind]]>
+                <![CDATA[mum]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[9/30/2018]]>
+                <![CDATA[5]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[12:00 AM]]>
+                <![CDATA[01:00 AM]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[1]]>
+                <![CDATA[8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.oneway_search_test@475530b9]" name="search" duration-ms="21017" started-at="2018-10-01T08:41:54Z" data-provider="search" finished-at="2018-10-01T08:42:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ind]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[CHHATRA]]>
-              </value>
-            </param>
-            <param index="2">
-              <value is-null="true"/>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[12:00 AM]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-        <test-method status="PASS" signature="browserclose()[pri:0, instance:Test_Cases.oneway_search_test@475530b9]" name="browserclose" is-config="true" duration-ms="1" started-at="2018-10-01T08:42:15Z" finished-at="2018-10-01T08:42:15Z">
+        <test-method status="PASS" signature="browserclose()[pri:0, instance:Test_Cases.oneway_search_test@475530b9]" name="browserclose" is-config="true" duration-ms="0" started-at="2018-10-03T10:44:45Z" finished-at="2018-10-03T10:44:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
