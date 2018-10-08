@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Cases.oneway_search_test">
+      <class name="Test_Cases.roundtrip_search">
         <methods>
-          <include name="openbrowser"/>
-          <include name="search" invocation-numbers="0"/>
           <include name="browserclose"/>
+          <include name="openbrowser"/>
+          <include name="search"/>
         </methods>
-      </class> <!-- Test_Cases.oneway_search_test -->
+      </class> <!-- Test_Cases.roundtrip_search -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

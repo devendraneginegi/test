@@ -16,7 +16,7 @@ private static WebElement element = null;
 		
 		wait =new WebDriverWait(driver,15);
 		 
-	    element = driver.findElement(By.xpath("//*[@href='/welcome/JETS']"));
+	    element = driver.findElement(By.xpath("//*[text()='Jet Setter']"));
 	    
 	    wait.until(ExpectedConditions.visibilityOf(element));
 	    

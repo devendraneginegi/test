@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="100793" started-at="2018-10-03T10:43:04Z" finished-at="2018-10-03T10:44:45Z">
+  <suite name="Default suite" duration-ms="100461" started-at="2018-10-08T07:22:02Z" finished-at="2018-10-08T07:23:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="100793" started-at="2018-10-03T10:43:04Z" finished-at="2018-10-03T10:44:45Z">
-      <class name="Test_Cases.oneway_search_test">
-        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Test_Cases.oneway_search_test@475530b9]" name="openbrowser" is-config="true" duration-ms="1608" started-at="2018-10-03T10:43:04Z" finished-at="2018-10-03T10:43:05Z">
+    <test name="Default test" duration-ms="100461" started-at="2018-10-08T07:22:02Z" finished-at="2018-10-08T07:23:42Z">
+      <class name="Test_Cases.roundtrip_search">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Test_Cases.roundtrip_search@475530b9]" name="openbrowser" is-config="true" duration-ms="1510" started-at="2018-10-08T07:22:02Z" finished-at="2018-10-08T07:22:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openbrowser -->
-        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.oneway_search_test@475530b9]" name="search" duration-ms="99153" started-at="2018-10-03T10:43:05Z" data-provider="search" finished-at="2018-10-03T10:44:45Z">
+        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.roundtrip_search@475530b9]" name="search" duration-ms="51047" started-at="2018-10-08T07:22:03Z" data-provider="roundtripsearch" finished-at="2018-10-08T07:22:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ind]]>
+                <![CDATA[LOS ANGELES INTL]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[mum]]>
+                <![CDATA[JOHN F KENNEDY INTL]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[5]]>
+                <![CDATA[11]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[01:00 AM]]>
+                <![CDATA[10:00 PM]]>
               </value>
             </param>
             <param index="4">
@@ -38,15 +38,66 @@
                 <![CDATA[8]]>
               </value>
             </param>
+            <param index="5">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[11:00 PM]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="browserclose()[pri:0, instance:Test_Cases.oneway_search_test@475530b9]" name="browserclose" is-config="true" duration-ms="0" started-at="2018-10-03T10:44:45Z" finished-at="2018-10-03T10:44:45Z">
+        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.roundtrip_search@475530b9]" name="search" duration-ms="47757" started-at="2018-10-08T07:22:54Z" data-provider="roundtripsearch" finished-at="2018-10-08T07:23:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LOS ANGELES INTL]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[JOHN F KENNEDY INTL]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[13]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10:00 PM]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[14]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[11:00 PM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="browserclose()[pri:0, instance:Test_Cases.roundtrip_search@475530b9]" name="browserclose" is-config="true" duration-ms="121" started-at="2018-10-08T07:23:42Z" finished-at="2018-10-08T07:23:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
-      </class> <!-- Test_Cases.oneway_search_test -->
+      </class> <!-- Test_Cases.roundtrip_search -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

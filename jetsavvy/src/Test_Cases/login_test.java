@@ -47,43 +47,44 @@ public class login_test {
 	  Thread.sleep(2000);
 	  
 	  driver.manage().window().maximize();
-	  
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  application_page.jetsetter(driver).click();
 	  Thread.sleep(4000);
 	  
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  
 	  welcome_page.loginlink(driver).click();
-	  Thread.sleep(4000);
+	  
 	  
 	  login_page.id(driver).sendKeys(username);
-	  Thread.sleep(4000);
+	  
 	  
 	  login_page.password(driver).sendKeys(password);
-	  Thread.sleep(4000);
+	  
 	  
 	  login_page.login(driver).click();
 	  
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  
-	  Thread.sleep(40000);
+	 
 	  
 	  try {
 		  
 		  if (home_page.logout(driver).isDisplayed())
 		  {
+			  System.out.println("user is redirecred to Home Page.Test Case  PASS"+ username +" and password "+ "*****");
 			  home_page.logout(driver).click();
 			  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			  
 		  }
+		  
 	  }
 	  
 	  catch(Exception e)
 	  {
 		  
-	  Assert.fail("Login Fail for username "+ username +" and password "+ "*****");
-	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	
+		  Assert.fail("Test case fail", e);
+	 
 	  }
 	  
 	}

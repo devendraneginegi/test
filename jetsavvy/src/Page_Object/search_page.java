@@ -32,16 +32,16 @@ public static void destination(WebDriver driver,String airport) throws Interrupt
 	    
 	    element.sendKeys(airport);
 	    
-	    Thread.sleep(4000);
+	    Thread.sleep(1000);
 	    
 	    List<WebElement> optionsToSelect = driver.findElements(By.xpath("//*[@class='inner-airport']"));
 
 	    for(WebElement option : optionsToSelect){
 	        System.out.println(option.getText());
-	        if(option.getText().equals("CHHATRAPATI SHIVAJI INTL")) {
+	        if(option.getText().equals(airport)) {
 	            System.out.println("Trying to select: "+airport);
 	            System.out.println(" ");
-	            Thread.sleep(3000);
+	            Thread.sleep(1000);
 	            option.click();
 	            break;
 	        }
@@ -53,7 +53,7 @@ public static void destination(WebDriver driver,String airport) throws Interrupt
 
 public static void date(WebDriver driver, String date) throws InterruptedException{
 	
-	wait =new WebDriverWait(driver,25);
+	wait =new WebDriverWait(driver,15);
 	
 	
 	// //*[@class='mat-datepicker-toggle-default-icon ng-star-inserted']
@@ -66,16 +66,16 @@ public static void date(WebDriver driver, String date) throws InterruptedExcepti
     
     element.click();
     
-    Thread.sleep(4000);
+    Thread.sleep(1000);
     
-    List<WebElement> optionsToSelect = driver.findElements(By.xpath("//*[@class='mat-calendar-body-cell-content']"));
+    List<WebElement> optionsToSelect = driver.findElements(By.xpath("//*[@role='gridcell']"));
 
     for(WebElement option : optionsToSelect){
         System.out.println(option.getText());
         if(option.getText().equals(date)) {
             System.out.println("Trying to select: "+date);
             System.out.println(" ");
-            Thread.sleep(3000);
+            Thread.sleep(1000);
             option.click();
             break;
         }
@@ -103,23 +103,28 @@ public static void time(WebDriver driver,String time) throws InterruptedExceptio
 	wait =new WebDriverWait(driver,15);
 	 
     element = driver.findElement(By.xpath("//*[@class='mat-select-value']"));
+    
      
     
     wait.until(ExpectedConditions.visibilityOf(element));
     
     element.click();
     
-    Thread.sleep(4000);
-    
     List<WebElement> optionsToSelect = driver.findElements(By.xpath("//*[@class='mat-option-text']"));
+    
+    
+    
+    Thread.sleep(1000);
+    
+  //  List<WebElement> optionsToSelect = driver.findElements(By.xpath("//*[@role='option']"));
    
 
     for(WebElement option : optionsToSelect){
         System.out.println(option.getText());
-        if(option.getText().equals("01:00 AM")) {
+        if(option.getText().equals(time)) {
             System.out.println("Trying to select: "+time);
             System.out.println(" ");
-            Thread.sleep(3000);
+            Thread.sleep(1000);
             option.click();
             break;
         }
@@ -140,16 +145,16 @@ public static void origin(WebDriver driver, String airport) throws InterruptedEx
     
     element.sendKeys(airport);
     
-    Thread.sleep(4000);
+    Thread.sleep(1000);
     
     List<WebElement> optionsToSelect = driver.findElements(By.xpath("//*[@class='inner-airport']"));
 
     for(WebElement option : optionsToSelect){
         System.out.println(option.getText());
-        if(option.getText().equals("INDIANAPOLIS INTL")) {
+        if(option.getText().equals(airport)) {
             System.out.println("Trying to select: "+airport);
             System.out.println(" ");
-            Thread.sleep(3000);
+            Thread.sleep(1000);
             option.click();
             break;
         }
@@ -173,8 +178,103 @@ public static WebElement submit(WebDriver driver){
     }
 
 
-//  //*[@id='mat-input-5']
+//  //*[@class='mat-radio-container']//following::div[4]
+
+public static WebElement roundtrip(WebDriver driver){
+	
+	wait =new WebDriverWait(driver,15);
+	 
+    element = driver.findElement(By.xpath("//*[@class='mat-radio-container']//following::div[4]"));
+    
+    wait.until(ExpectedConditions.visibilityOf(element));
+    
+    return element;
+ 
+    }
+
+public static WebElement multitrip(WebDriver driver){
+	
+	wait =new WebDriverWait(driver,15);
+	 
+    element = driver.findElement(By.xpath("//*[@class='mat-radio-container']//following::div[9]"));
+    
+    wait.until(ExpectedConditions.visibilityOf(element));
+    
+    return element;
+ 
+    }
 
 
 
+public static void returndate(WebDriver driver,String date) throws InterruptedException{
+	
+wait =new WebDriverWait(driver,15);
+	
+	
+	// //*[@class='mat-datepicker-toggle-default-icon ng-star-inserted']
+	
+	// //*[@role='gridcell']
+	element = driver.findElement(By.xpath("//*[@class='mat-datepicker-toggle-default-icon ng-star-inserted']//following::div[32]"));
+    
+    wait.until(ExpectedConditions.visibilityOf(element));
+    
+    
+    element.click();
+    
+    Thread.sleep(1000);
+    
+    List<WebElement> optionsToSelect = driver.findElements(By.xpath("//*[@role='gridcell']"));
+
+    for(WebElement option : optionsToSelect){
+        System.out.println(option.getText());
+        if(option.getText().equals(date)) {
+            System.out.println("Trying to select: "+date);
+            System.out.println(" ");
+            Thread.sleep(1000);
+            option.click();
+            break;
+        }
+    
+  //  return element;
+ 
+    }
+ 
+    }
+
+public static void returntime(WebDriver driver,String time) throws InterruptedException{
+	
+	// //*[@class='mat-select-value']//following::div[32]
+	
+	wait =new WebDriverWait(driver,15);
+	 
+    element = driver.findElement(By.xpath("//*[@class='mat-select-value']//following::div[32]"));
+    
+     
+    
+    wait.until(ExpectedConditions.visibilityOf(element));
+    
+    element.click();
+    
+    List<WebElement> optionsToSelect = driver.findElements(By.xpath("//*[@class='mat-option-text']"));
+    
+    
+    
+    Thread.sleep(1000);
+    
+  //  List<WebElement> optionsToSelect = driver.findElements(By.xpath("//*[@role='option']"));
+   
+
+    for(WebElement option : optionsToSelect){
+        System.out.println(option.getText());
+        if(option.getText().equals(time)) {
+            System.out.println("Trying to select: "+time);
+            System.out.println(" ");
+            Thread.sleep(1000);
+            option.click();
+            break;
+        }
+    
+    }
+
+}
 }
