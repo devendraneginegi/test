@@ -1,12 +1,8 @@
 package Test_Cases;
 
 import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -14,16 +10,13 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import Page_Object.application_page;
-import Page_Object.home_page;
 import Page_Object.search_page;
 import Page_Object.search_result_page;
-import Testdata.login_data;
 import Testdata.search_data;
 
-public class oneway_search_test {
+public class mutitrip_search {
 	
-	 WebDriver driver;
+	WebDriver driver;
 	 
 	 @BeforeTest()
 	 public void openbrowser()
@@ -34,8 +27,8 @@ public class oneway_search_test {
 	 }
 	 
 	
-	@Test(dataProviderClass = search_data.class, dataProvider = "search")
-	public void search(String origin_airport,String destination_airport,String date,String time,String passanger) throws InterruptedException, AWTException
+	@Test(dataProviderClass = search_data.class, dataProvider = "multitripsearch")
+	public void search(String origin_airport,String destination_airport,String date,String time,String passanger,String origin_airport1,String destination_airport1,String date1,String time1,String passanger1) throws InterruptedException, AWTException
 	{  
 	 
 	  
@@ -54,33 +47,45 @@ public class oneway_search_test {
 	 // Thread.sleep(4000);
 	  
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	
 	  
-	  search_page.origin(driver, origin_airport);
+	  search_page.mutitrip(driver).click();
+	
 	  Thread.sleep(2000);
+	  search_page.origin(driver, origin_airport);
+	  
 	  
 	  search_page.destination(driver, destination_airport);
-	  Thread.sleep(2000);
+	  
 	  
 	  search_page.date(driver, date);
 	  
-	  Thread.sleep(2000);
+	  
 	
-      search_page.time(driver, time);
-      Thread.sleep(2000);
+    search_page.time(driver, time);
+    
 	 // search_page.submit(driver).click();
-      search_page.passanger(driver).clear();
+    search_page.passanger(driver).clear();
 	  
-      search_page.passanger(driver).sendKeys(passanger);
-      
-      Thread.sleep(2000);
-      
-      search_page.submit(driver).click();
-
-      driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+    search_page.passanger(driver).sendKeys(passanger);
+   
+    search_page.origin1(driver, origin_airport1);
+	
+    search_page.destination1(driver, destination_airport1);
+    
+    search_page.date1(driver, date1);
+    
+    search_page.time1(driver, time1);
+    
+    search_page.passanger1(driver).sendKeys(passanger1);
+    
+    
 	  
+    search_page.submit(driver).click();
+    
+    
+    driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	  
-      
+    
 try {
 		  
 		  if (search_result_page.aircrafttype(driver).isDisplayed())
@@ -113,5 +118,6 @@ try {
 	{
 		driver.quit();
 	}
+
 
 }

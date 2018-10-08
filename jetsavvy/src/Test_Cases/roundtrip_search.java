@@ -77,7 +77,7 @@ public class roundtrip_search {
     Thread.sleep(2000);
      
      search_page.submit(driver).click();
-     Thread.sleep(20000);
+     driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	  
      
 try {
