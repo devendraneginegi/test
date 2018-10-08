@@ -53,8 +53,10 @@ public static void destination(WebDriver driver,String airport) throws Interrupt
 
 public static void date(WebDriver driver, String date) throws InterruptedException{
 	
-	wait =new WebDriverWait(driver,15);
 	
+	
+	wait =new WebDriverWait(driver,15);
+	System.out.println(date);
 	
 	// //*[@class='mat-datepicker-toggle-default-icon ng-star-inserted']
 	
@@ -68,21 +70,12 @@ public static void date(WebDriver driver, String date) throws InterruptedExcepti
     
     Thread.sleep(1000);
     
-    List<WebElement> optionsToSelect = driver.findElements(By.xpath("//*[@role='gridcell']"));
+    element1 = driver.findElement(By.xpath("//*[@aria-label='"+date+"']"));
 
-    for(WebElement option : optionsToSelect){
-        System.out.println(option.getText());
-        if(option.getText().equals(date)) {
-            System.out.println("Trying to select: "+date);
-            System.out.println(" ");
-            Thread.sleep(1000);
-            option.click();
-            break;
-        }
-    
+    element1.click();
   //  return element;
  
-    }
+   
     }
 public static WebElement passanger(WebDriver driver){
 	
@@ -109,7 +102,8 @@ public static void time(WebDriver driver,String time) throws InterruptedExceptio
     wait.until(ExpectedConditions.visibilityOf(element));
     
     element.click();
-    
+    Thread.sleep(1000);
+  
     List<WebElement> optionsToSelect = driver.findElements(By.xpath("//*[@class='mat-option-text']"));
     
     
@@ -223,21 +217,9 @@ wait =new WebDriverWait(driver,15);
     
     Thread.sleep(1000);
     
-    List<WebElement> optionsToSelect = driver.findElements(By.xpath("//*[@role='gridcell']"));
+    element1 = driver.findElement(By.xpath("//*[@aria-label='"+date+"']"));
 
-    for(WebElement option : optionsToSelect){
-        System.out.println(option.getText());
-        if(option.getText().equals(date)) {
-            System.out.println("Trying to select: "+date);
-            System.out.println(" ");
-            Thread.sleep(1000);
-            option.click();
-            break;
-        }
-    
-  //  return element;
- 
-    }
+     element1.click();
  
     }
 
@@ -259,7 +241,7 @@ public static void returntime(WebDriver driver,String time) throws InterruptedEx
     
     
     
-    Thread.sleep(1000);
+    Thread.sleep(2000);
     
   //  List<WebElement> optionsToSelect = driver.findElements(By.xpath("//*[@role='option']"));
    

@@ -35,7 +35,7 @@ public class oneway_search_test {
 	 
 	
 	@Test(dataProviderClass = search_data.class, dataProvider = "search")
-	public void search(String origin_airport,String destination_airport,String date,String time,String passanger,String returndate,String returntime) throws InterruptedException, AWTException
+	public void search(String origin_airport,String destination_airport,String date,String time,String passanger) throws InterruptedException, AWTException
 	{  
 	 
 	  

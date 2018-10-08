@@ -7,7 +7,7 @@
         <methods>
           <include name="browserclose"/>
           <include name="openbrowser"/>
-          <include name="search"/>
+          <include name="search" invocation-numbers="1"/>
         </methods>
       </class> <!-- Test_Cases.roundtrip_search -->
     </classes>

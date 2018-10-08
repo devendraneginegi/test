@@ -33,18 +33,18 @@ public class search_data {
 		
 		data[0][0]= "LOS ANGELES INTL";
 		data[0][1]= "JOHN F KENNEDY INTL";
-		data[0][2]= "11";
+		data[0][2]= "October 11, 2018";
 		data[0][3]= "10:00 PM";
 		data[0][4]= "8";
-		data[0][5]= "12";
+		data[0][5]= "October 12, 2018";
 		data[0][6]= "11:00 PM";	
 		
 		data[1][0]= "LOS ANGELES INTL";
 		data[1][1]= "JOHN F KENNEDY INTL";
-		data[1][2]= "13";
+		data[1][2]= "October 13, 2018";
 		data[1][3]= "10:00 PM";
 		data[1][4]= "10";
-		data[1][5]= "14";
+		data[1][5]= "October 14, 2018";
 		data[1][6]= "11:00 PM";	
 		return data;
 	}
