@@ -30,12 +30,9 @@ public class roundtrip_search {
 	@Test(dataProviderClass = search_data.class, dataProvider = "roundtripsearch")
 	public void search(String origin_airport,String destination_airport,String date,String time,String passanger,String returndate,String returntime) throws InterruptedException, AWTException
 	{  
-	 
-	  
+	 	  
 	  driver.get("https://jetsetter:Jetsavvy!@demo.jetsavvy.com/home");
-	  
-	  
-	  
+	  	  
 	  Thread.sleep(2000);
 	  
 	  
@@ -51,6 +48,7 @@ public class roundtrip_search {
 	  search_page.roundtrip(driver).click();
 	
 	  Thread.sleep(2000);
+	  
 	  search_page.origin(driver, origin_airport);
 	  
 	  
@@ -61,20 +59,20 @@ public class roundtrip_search {
 	  
 	  
 	
-     search_page.time(driver, time);
+      search_page.time(driver, time);
      
 	 // search_page.submit(driver).click();
-     search_page.passanger(driver).clear();
+      search_page.passanger(driver).clear();
 	  
-     search_page.passanger(driver).sendKeys(passanger);
+      search_page.passanger(driver).sendKeys(passanger);
     
      
 	  
 	  search_page.returndate(driver, returndate);
 	  
 	
-    search_page.returntime(driver, returntime);
-    Thread.sleep(2000);
+      search_page.returntime(driver, returntime);
+      Thread.sleep(2000);
      
      search_page.submit(driver).click();
      driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);

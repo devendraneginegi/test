@@ -30,11 +30,8 @@ public class mutitrip_search {
 	@Test(dataProviderClass = search_data.class, dataProvider = "multitripsearch")
 	public void search(String origin_airport,String destination_airport,String date,String time,String passanger,String origin_airport1,String destination_airport1,String date1,String time1,String passanger1) throws InterruptedException, AWTException
 	{  
-	 
-	  
-	  driver.get("https://jetsetter:Jetsavvy!@demo.jetsavvy.com/home");
-	  
-	  
+	 	  
+	  driver.get("https://jetsetter:Jetsavvy!@demo.jetsavvy.com/home");  
 	  
 	  Thread.sleep(2000);
 	  
@@ -61,29 +58,36 @@ public class mutitrip_search {
 	  
 	  
 	
-    search_page.time(driver, time);
+      search_page.time(driver, time);
     
 	 // search_page.submit(driver).click();
-    search_page.passanger(driver).clear();
+      search_page.passanger(driver).clear();
 	  
-    search_page.passanger(driver).sendKeys(passanger);
+      search_page.passanger(driver).sendKeys(passanger);
+    
+      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
    
-    search_page.origin1(driver, origin_airport1);
+      search_page.origin1(driver, origin_airport1);
 	
-    search_page.destination1(driver, destination_airport1);
+      search_page.destination1(driver, destination_airport1);
     
-    search_page.date1(driver, date1);
+      search_page.date1(driver, date1);
     
-    search_page.time1(driver, time1);
+      search_page.time1(driver, time1);
     
-    search_page.passanger1(driver).sendKeys(passanger1);
+    
+      search_page.passanger1(driver).clear();
+    
+      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    
+      search_page.passanger1(driver).sendKeys(passanger1);
     
     
 	  
-    search_page.submit(driver).click();
+      search_page.submit(driver).click();
     
     
-    driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+      driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	  
     
 try {
@@ -104,7 +108,7 @@ try {
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	
 	  }
-	 // Thread.sleep(4000);
+	 // Thread.sleep(4000);dddddd test test test
 	//  search_page.date(driver).sendKeys(date);
 	  
 	 // search_page.date(driver).sendKeys(date);

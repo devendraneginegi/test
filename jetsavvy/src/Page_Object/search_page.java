@@ -276,7 +276,7 @@ public static void origin1(WebDriver driver, String airport) throws InterruptedE
 	
 	wait =new WebDriverWait(driver,15);
 	 
-    element = driver.findElement(By.xpath("//*[(@class='mat-input-infix mat-form-field-infix')]//following::div[56]"));
+    element = driver.findElement(By.xpath("//*[(@placeholder='Origin')]//following::input[4]"));
     
     
     
@@ -340,7 +340,7 @@ wait =new WebDriverWait(driver,15);
 	// //*[@class='mat-datepicker-toggle-default-icon ng-star-inserted']
 	
 	// //*[@role='gridcell']
-	element = driver.findElement(By.xpath("//*[@class='mat-datepicker-toggle-default-icon ng-star-inserted']//following::div[58]"));
+	element = driver.findElement(By.xpath("//*[@class='mat-datepicker-toggle-default-icon ng-star-inserted']//following::div[55]"));
     
     wait.until(ExpectedConditions.visibilityOf(element));
     
@@ -361,7 +361,7 @@ public static void time1(WebDriver driver,String time) throws InterruptedExcepti
 	
 	wait =new WebDriverWait(driver,15);
 	 
-    element = driver.findElement(By.xpath("//*[@class='mat-select-value']//following::div[56]"));
+    element = driver.findElement(By.xpath("//*[@class='mat-select-value']//following::div[55]"));
     
      
     
@@ -397,7 +397,7 @@ public static WebElement passanger1(WebDriver driver){
 	
 	wait =new WebDriverWait(driver,15);
 	 
-    element = driver.findElement(By.xpath("//*[@type='number']//following::div[56]"));
+    element = driver.findElement(By.xpath("//*[@id='mat-input-5']"));
     
     wait.until(ExpectedConditions.visibilityOf(element));
     
