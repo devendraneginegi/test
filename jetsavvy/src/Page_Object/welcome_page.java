@@ -16,7 +16,7 @@ private static WebElement element = null;
 		
 		wait =new WebDriverWait(driver,15);
 		 
-	    element = driver.findElement(By.xpath("//*[text()='SignUp']"));
+	    element = driver.findElement(By.xpath("//*[contains(text(),'Sign')]"));
 	    
 	    wait.until(ExpectedConditions.visibilityOf(element));
 	    

@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
-  <test thread-count="4" name="Test(failed)" parallel="classes">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="4" name="Test(failed)">
     <classes>
+      <class name="Test_Cases.roundtrip_search">
+        <methods>
+          <include name="browserclose"/>
+          <include name="openbrowser"/>
+          <include name="search" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- Test_Cases.roundtrip_search -->
       <class name="Test_Cases.mutitrip_search">
         <methods>
           <include name="openbrowser"/>

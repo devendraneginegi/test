@@ -14,11 +14,11 @@ import Page_Object.home_page;
 import Page_Object.registration_confirm;
 import Page_Object.signup_page;
 import Page_Object.welcome_page;
+import Testdata.broker_signup_data;
 import Testdata.signup_data;
 
-public class jetsetter_signup_test {
+public class beroker_signup {
 
-	
 	
 	WebDriver driver;
 	 
@@ -31,18 +31,14 @@ public class jetsetter_signup_test {
 		 driver = new ChromeDriver();
 	 }
 	
-	@Test(dataProviderClass = signup_data.class, dataProvider = "signup")
+	@Test(dataProviderClass = broker_signup_data.class, dataProvider = "signup")
 	public void signup(String fname,String lname,String email,String password) throws InterruptedException
 	{  	 
 	  
-	  driver.get("https://jetsetter:Jetsavvy!@demo.jetsavvy.com/home");	  
+	  driver.get("https://jetsetter:Jetsavvy!@demob2b.jetsavvy.com/welcome/BRKO");	  
 	  //Thread.sleep(2000);
 	  
 	  driver.manage().window().maximize();
-	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	  
-	  application_page.jetsetter(driver).click();
-	  //Thread.sleep(4000);
 	  
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  
@@ -60,14 +56,12 @@ public class jetsetter_signup_test {
 	  
 	  signup_page.signup(driver).click();
 	  
-	  Thread.sleep(2000);
-	  
+	  Thread.sleep(4000);
 try {
 		  
 		  if (registration_confirm.registration(driver).isDisplayed())
 		  {
 			  System.out.println("user is reristered check mail for activation.Test Case  PASS"+ fname +" and password "+ "*****");
-			  Thread.sleep(2000);
 			  
 		  }
 		  
@@ -78,11 +72,10 @@ try {
 		  
 		  Assert.fail("Test case fail", e);
 	 
-	  }	  
+	  }  
 	  
 	}
-	
-	 @AfterTest()
+	@AfterTest()
 	 public void closebrowser()
 	 {
 		 driver.quit();
