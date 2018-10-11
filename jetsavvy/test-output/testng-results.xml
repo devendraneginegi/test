@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="210698" started-at="2018-10-10T11:32:52Z" finished-at="2018-10-10T11:36:23Z">
+  <suite name="Suite" duration-ms="224321" started-at="2018-10-11T12:32:18Z" finished-at="2018-10-11T12:36:03Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="210698" started-at="2018-10-10T11:32:52Z" finished-at="2018-10-10T11:36:23Z">
+    <test name="Test" duration-ms="224321" started-at="2018-10-11T12:32:18Z" finished-at="2018-10-11T12:36:03Z">
       <class name="Test_Cases.oneway_search_test">
-        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.oneway_search_test@26be92ad]" name="search" duration-ms="47135" started-at="2018-10-10T11:32:55Z" data-provider="search" finished-at="2018-10-10T11:33:43Z">
+        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.oneway_search_test@26be92ad]" name="search" duration-ms="46454" started-at="2018-10-11T12:32:21Z" data-provider="search" finished-at="2018-10-11T12:33:08Z">
           <params>
             <param index="0">
               <value>
@@ -38,7 +38,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.oneway_search_test@26be92ad]" name="search" duration-ms="41069" started-at="2018-10-10T11:33:43Z" data-provider="search" finished-at="2018-10-10T11:34:24Z">
+        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.oneway_search_test@26be92ad]" name="search" duration-ms="41264" started-at="2018-10-11T12:33:08Z" data-provider="search" finished-at="2018-10-11T12:33:49Z">
           <params>
             <param index="0">
               <value>
@@ -71,19 +71,19 @@
         </test-method> <!-- search -->
       </class> <!-- Test_Cases.oneway_search_test -->
       <class name="Test_Cases.mutitrip_search">
-        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Test_Cases.mutitrip_search@224edc67]" name="openbrowser" is-config="true" duration-ms="1444" started-at="2018-10-10T11:32:52Z" finished-at="2018-10-10T11:32:54Z">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Test_Cases.mutitrip_search@224edc67]" name="openbrowser" is-config="true" duration-ms="1427" started-at="2018-10-11T12:32:18Z" finished-at="2018-10-11T12:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openbrowser -->
-        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Test_Cases.oneway_search_test@26be92ad]" name="openbrowser" is-config="true" duration-ms="805" started-at="2018-10-10T11:32:54Z" finished-at="2018-10-10T11:32:55Z">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Test_Cases.oneway_search_test@26be92ad]" name="openbrowser" is-config="true" duration-ms="792" started-at="2018-10-11T12:32:20Z" finished-at="2018-10-11T12:32:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openbrowser -->
-        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Test_Cases.roundtrip_search@4c70fda8]" name="openbrowser" is-config="true" duration-ms="841" started-at="2018-10-10T11:32:55Z" finished-at="2018-10-10T11:32:55Z">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Test_Cases.roundtrip_search@4c70fda8]" name="openbrowser" is-config="true" duration-ms="805" started-at="2018-10-11T12:32:20Z" finished-at="2018-10-11T12:32:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openbrowser -->
-        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.mutitrip_search@224edc67]" name="search" duration-ms="41638" started-at="2018-10-10T11:35:41Z" data-provider="multitripsearch" finished-at="2018-10-10T11:36:23Z">
+        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.mutitrip_search@224edc67]" name="search" duration-ms="58165" started-at="2018-10-11T12:35:04Z" data-provider="multitripsearch" finished-at="2018-10-11T12:36:02Z">
           <params>
             <param index="0">
               <value>
@@ -139,21 +139,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="browserclose()[pri:0, instance:Test_Cases.mutitrip_search@224edc67]" name="browserclose" is-config="true" duration-ms="220" started-at="2018-10-10T11:36:23Z" finished-at="2018-10-10T11:36:23Z">
+        <test-method status="PASS" signature="browserclose()[pri:0, instance:Test_Cases.mutitrip_search@224edc67]" name="browserclose" is-config="true" duration-ms="219" started-at="2018-10-11T12:36:02Z" finished-at="2018-10-11T12:36:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
-        <test-method status="PASS" signature="browserclose()[pri:0, instance:Test_Cases.oneway_search_test@26be92ad]" name="browserclose" is-config="true" duration-ms="133" started-at="2018-10-10T11:36:23Z" finished-at="2018-10-10T11:36:23Z">
+        <test-method status="PASS" signature="browserclose()[pri:0, instance:Test_Cases.oneway_search_test@26be92ad]" name="browserclose" is-config="true" duration-ms="143" started-at="2018-10-11T12:36:02Z" finished-at="2018-10-11T12:36:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
-        <test-method status="PASS" signature="browserclose()[pri:0, instance:Test_Cases.roundtrip_search@4c70fda8]" name="browserclose" is-config="true" duration-ms="103" started-at="2018-10-10T11:36:23Z" finished-at="2018-10-10T11:36:23Z">
+        <test-method status="PASS" signature="browserclose()[pri:0, instance:Test_Cases.roundtrip_search@4c70fda8]" name="browserclose" is-config="true" duration-ms="168" started-at="2018-10-11T12:36:02Z" finished-at="2018-10-11T12:36:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
       </class> <!-- Test_Cases.mutitrip_search -->
       <class name="Test_Cases.roundtrip_search">
-        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.roundtrip_search@4c70fda8]" name="search" duration-ms="40633" started-at="2018-10-10T11:34:24Z" data-provider="roundtripsearch" finished-at="2018-10-10T11:35:04Z">
+        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.roundtrip_search@4c70fda8]" name="search" duration-ms="39218" started-at="2018-10-11T12:33:49Z" data-provider="roundtripsearch" finished-at="2018-10-11T12:34:28Z">
           <params>
             <param index="0">
               <value>
@@ -194,7 +194,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.roundtrip_search@4c70fda8]" name="search" duration-ms="36636" started-at="2018-10-10T11:35:04Z" data-provider="roundtripsearch" finished-at="2018-10-10T11:35:41Z">
+        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.roundtrip_search@4c70fda8]" name="search" duration-ms="35626" started-at="2018-10-11T12:34:28Z" data-provider="roundtripsearch" finished-at="2018-10-11T12:35:04Z">
           <params>
             <param index="0">
               <value>
