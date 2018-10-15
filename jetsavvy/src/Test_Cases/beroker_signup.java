@@ -15,7 +15,7 @@ import Page_Object.registration_confirm;
 import Page_Object.signup_page;
 import Page_Object.welcome_page;
 import Testdata.broker_signup_data;
-import Testdata.signup_data;
+import Testdata.jetsetter_signup_data;
 
 public class beroker_signup {
 

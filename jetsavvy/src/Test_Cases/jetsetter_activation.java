@@ -9,17 +9,18 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import Gmail_pom.gmail_homepage;
+import Gmail_pom.gmail_loginpage;
 import Page_Object.application_page;
-import Page_Object.home_page;
 import Page_Object.registration_confirm;
 import Page_Object.signup_page;
 import Page_Object.welcome_page;
 import Testdata.jetsetter_signup_data;
 
-public class jetsetter_signup_test {
 
-	
-	
+public class jetsetter_activation {
+
+
 	WebDriver driver;
 	 
 	 
@@ -62,29 +63,49 @@ public class jetsetter_signup_test {
 	  
 	  Thread.sleep(2000);
 	  
-try {
-		  
-		  if (registration_confirm.registration(driver).isDisplayed())
-		  {
-			  System.out.println("user is reristered check mail for activation.Test Case  PASS"+ fname +" and password "+ "*****");
-			  Thread.sleep(2000);
-			  
-		  }
-		  
-	  }
+	  driver.get("https://www.gmail.com");
 	  
-	  catch(Exception e)
-	  {
-		  
-		  Assert.fail("Test case fail", e);
-	 
-	  }	  
+	  gmail_loginpage.id(driver).sendKeys("devendra.singh@quadrateglobal.com");
+	  
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  
+	  gmail_loginpage.next(driver).click();
+	  
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  
+	  gmail_loginpage.password(driver).sendKeys("Deepak@123");
+	  
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  
+	  gmail_loginpage.next(driver).click();
+	  
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  
+	  String win= driver.getWindowHandle();
+	  
+	  driver.switchTo().window(win);
+	  
+	  gmail_homepage.closealert(driver).click();
+	    
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  
+	  gmail_homepage.selectactivationmail(driver).click();
+	  
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  
+	  gmail_homepage.clickonactivation(driver).click();
+	  
+	
+	  
+	  
+	  
+
 	  
 	}
 	
 	 @AfterTest()
 	 public void closebrowser()
 	 {
-		 driver.quit();
+		// driver.quit();
 	 }
 }

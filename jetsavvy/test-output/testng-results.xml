@@ -1,241 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="224321" started-at="2018-10-11T12:32:18Z" finished-at="2018-10-11T12:36:03Z">
+  <suite name="Default suite" duration-ms="34847" started-at="2018-10-15T13:09:21Z" finished-at="2018-10-15T13:09:56Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="224321" started-at="2018-10-11T12:32:18Z" finished-at="2018-10-11T12:36:03Z">
-      <class name="Test_Cases.oneway_search_test">
-        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.oneway_search_test@26be92ad]" name="search" duration-ms="46454" started-at="2018-10-11T12:32:21Z" data-provider="search" finished-at="2018-10-11T12:33:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[LOS ANGELES INTL]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[JOHN F KENNEDY INTL]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[October 11, 2018]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[11:00 PM]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.oneway_search_test@26be92ad]" name="search" duration-ms="41264" started-at="2018-10-11T12:33:08Z" data-provider="search" finished-at="2018-10-11T12:33:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[JOHN F KENNEDY INTL]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[LESTER B. PEARSON INTL]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[October 12, 2018]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[02:00 AM]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-      </class> <!-- Test_Cases.oneway_search_test -->
-      <class name="Test_Cases.mutitrip_search">
-        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Test_Cases.mutitrip_search@224edc67]" name="openbrowser" is-config="true" duration-ms="1427" started-at="2018-10-11T12:32:18Z" finished-at="2018-10-11T12:32:20Z">
+    <test name="Default test" duration-ms="34847" started-at="2018-10-15T13:09:21Z" finished-at="2018-10-15T13:09:56Z">
+      <class name="Test_Cases.jetsetter_activation">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Test_Cases.jetsetter_activation@475530b9]" name="openbrowser" is-config="true" duration-ms="5967" started-at="2018-10-15T13:09:21Z" finished-at="2018-10-15T13:09:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openbrowser -->
-        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Test_Cases.oneway_search_test@26be92ad]" name="openbrowser" is-config="true" duration-ms="792" started-at="2018-10-11T12:32:20Z" finished-at="2018-10-11T12:32:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openbrowser -->
-        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Test_Cases.roundtrip_search@4c70fda8]" name="openbrowser" is-config="true" duration-ms="805" started-at="2018-10-11T12:32:20Z" finished-at="2018-10-11T12:32:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openbrowser -->
-        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.mutitrip_search@224edc67]" name="search" duration-ms="58165" started-at="2018-10-11T12:35:04Z" data-provider="multitripsearch" finished-at="2018-10-11T12:36:02Z">
+        <test-method status="PASS" signature="signup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.jetsetter_activation@475530b9]" name="signup" duration-ms="28749" started-at="2018-10-15T13:09:27Z" data-provider="jetsettersignup" finished-at="2018-10-15T13:09:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[LOS ANGELES INTL]]>
+                <![CDATA[dev jetsetter]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[JOHN F KENNEDY INTL]]>
+                <![CDATA[negi]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[October 13, 2018]]>
+                <![CDATA[devendra.singh+44@quadrateglobal.com]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[01:00 PM]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[JOHN F KENNEDY INTL]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[LOS ANGELES INTL]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[October 14, 2018]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[11:00 PM]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[11]]>
+                <![CDATA[Deepak@123]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- search -->
-        <test-method status="PASS" signature="browserclose()[pri:0, instance:Test_Cases.mutitrip_search@224edc67]" name="browserclose" is-config="true" duration-ms="219" started-at="2018-10-11T12:36:02Z" finished-at="2018-10-11T12:36:02Z">
+        </test-method> <!-- signup -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:Test_Cases.jetsetter_activation@475530b9]" name="closebrowser" is-config="true" duration-ms="1" started-at="2018-10-15T13:09:56Z" finished-at="2018-10-15T13:09:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserclose -->
-        <test-method status="PASS" signature="browserclose()[pri:0, instance:Test_Cases.oneway_search_test@26be92ad]" name="browserclose" is-config="true" duration-ms="143" started-at="2018-10-11T12:36:02Z" finished-at="2018-10-11T12:36:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserclose -->
-        <test-method status="PASS" signature="browserclose()[pri:0, instance:Test_Cases.roundtrip_search@4c70fda8]" name="browserclose" is-config="true" duration-ms="168" started-at="2018-10-11T12:36:02Z" finished-at="2018-10-11T12:36:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserclose -->
-      </class> <!-- Test_Cases.mutitrip_search -->
-      <class name="Test_Cases.roundtrip_search">
-        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.roundtrip_search@4c70fda8]" name="search" duration-ms="39218" started-at="2018-10-11T12:33:49Z" data-provider="roundtripsearch" finished-at="2018-10-11T12:34:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[LOS ANGELES INTL]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[JOHN F KENNEDY INTL]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[October 13, 2018]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[10:00 PM]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[October 14, 2018]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[11:00 PM]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.roundtrip_search@4c70fda8]" name="search" duration-ms="35626" started-at="2018-10-11T12:34:28Z" data-provider="roundtripsearch" finished-at="2018-10-11T12:35:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[LOS ANGELES INTL]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[JOHN F KENNEDY INTL]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[October 15, 2018]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[10:00 PM]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[11]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[October 16, 2018]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[11:00 PM]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-      </class> <!-- Test_Cases.roundtrip_search -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- closebrowser -->
+      </class> <!-- Test_Cases.jetsetter_activation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
