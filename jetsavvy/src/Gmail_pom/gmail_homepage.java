@@ -24,11 +24,12 @@ public static WebDriverWait wait;
 	
 
 	
-	public static WebElement clickonactivation(WebDriver driver){
+	public static WebElement clickonactivation(WebDriver driver) throws InterruptedException{
 		
-		wait =new WebDriverWait(driver,15);
+		wait =new WebDriverWait(driver,25);
+		Thread.sleep(3000);
 		 
-	    element = driver.findElement(By.xpath("//a[contains(@data-saferedirecturl,'https')]"));
+	    element = driver.findElement(By.xpath("//a[contains(@data-saferedirecturl,'https://demo.jetsavvy.com')]"));
 	    
 	    wait.until(ExpectedConditions.visibilityOf(element));
 	    

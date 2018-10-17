@@ -5,9 +5,9 @@
     <classes>
       <class name="Test_Cases.jetsetter_activation">
         <methods>
+          <include name="addcard" invocation-numbers="0"/>
           <include name="openbrowser"/>
           <include name="closebrowser"/>
-          <include name="signup" invocation-numbers="0"/>
         </methods>
       </class> <!-- Test_Cases.jetsetter_activation -->
     </classes>
