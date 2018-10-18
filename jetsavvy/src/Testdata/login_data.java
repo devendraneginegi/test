@@ -14,14 +14,14 @@ public class login_data {
 	public static Object[][] loginjetsetter()
 	{
 		
-		Object[][] data = new Object[2][2];
+		Object[][] data = new Object[1][2];
 		
-		data[0][0]= "devendra.singh+1@quadrateglobal.com";
+		data[0][0]= "devendra.singh+90@quadrateglobal.com";
 		data[0][1]= "Deepak@123";
 		
 		
-		data[1][0]= "devendra.negi+1@quadrateglobal.com";
-		data[1][1]= "Deepak@1234";
+	//	data[1][0]= "devendra.negi+1@quadrateglobal.com";
+	//	data[1][1]= "Deepak@1234";
 		
 		return data;
 	}
