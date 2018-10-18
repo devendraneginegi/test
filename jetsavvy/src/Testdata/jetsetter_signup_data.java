@@ -12,7 +12,7 @@ public class jetsetter_signup_data {
 		
 		data[0][0]= "dev jetsetter";
 		data[0][1]= "negi";
-		data[0][2]= "devendra.singh+86@quadrateglobal.com";
+		data[0][2]= "devendra.singh+90@quadrateglobal.com";
 		data[0][3]= "Deepak@123";
 
 		

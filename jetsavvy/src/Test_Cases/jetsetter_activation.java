@@ -120,6 +120,7 @@ public class jetsetter_activation {
 		    System.out.println(tabs.size());
 		    driver.switchTo().window((String) tabs.get(1)); 
 		    driver.switchTo().defaultContent();
+		    Thread.sleep(2000);
 		  activation_userprofile.next(driver).click();
 		  Thread.sleep(2000);
 		 
@@ -182,6 +183,7 @@ public class jetsetter_activation {
 	  activation_cardlist.save(driver).click();
 	  Thread.sleep(2000);
 	  driver.switchTo().defaultContent();
+	  Thread.sleep(2000);
 	  
 	  activation_cardlist.next(driver).click();
 	  
