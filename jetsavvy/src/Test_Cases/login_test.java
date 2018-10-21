@@ -62,7 +62,7 @@ public class login_test {
 	  
 	  login_page.password(driver).sendKeys(password);
 	  
-	  
+	  //
 	  login_page.login(driver).click();
 	  
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
