@@ -26,7 +26,12 @@ public class beroker_signup {
 	 @BeforeTest()
 	 public void openbrowser()
 	 {
-		 System.setProperty("webdriver.chrome.driver", "/Users/administrator/Downloads/chromedriver");
+
+		 String path = System.getProperty("user.dir");
+			
+		 System.out.println(path);
+		 
+		 System.setProperty("webdriver.chrome.driver", path+"/src/Browser/chromedriver.exe");
 
 		 driver = new ChromeDriver();
 	 }

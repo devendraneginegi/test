@@ -28,12 +28,17 @@ public class oneway_search_test {
 	 @BeforeTest()
 	 public void openbrowser()
 	 {
-		 System.setProperty("webdriver.chrome.driver", "/Users/administrator/Downloads/chromedriver");
+
+		 String path = System.getProperty("user.dir");
+			
+		 System.out.println(path);
+		 
+		 System.setProperty("webdriver.chrome.driver", path+"/src/Browser/chromedriver.exe");
 
 		 driver = new ChromeDriver();
 	 }
 	 
-	
+	// C:\Users\Admin\git\repository7\test\jetsavvy\src\Browser
 	@Test(dataProviderClass = search_data.class, dataProvider = "search")
 	public void search(String origin_airport,String destination_airport,String date,String time,String passanger) throws InterruptedException, AWTException
 	{  

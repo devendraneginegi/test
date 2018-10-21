@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40443" started-at="2018-10-18T11:50:14Z" finished-at="2018-10-18T11:50:55Z">
+  <suite name="Default suite" duration-ms="35954" started-at="2018-10-21T03:35:26Z" finished-at="2018-10-21T03:36:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40443" started-at="2018-10-18T11:50:14Z" finished-at="2018-10-18T11:50:55Z">
-      <class name="Test_Cases.adduser">
-        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Test_Cases.adduser@1d057a39]" name="openbrowser" is-config="true" duration-ms="5216" started-at="2018-10-18T11:50:14Z" finished-at="2018-10-18T11:50:19Z">
+    <test name="Default test" duration-ms="35954" started-at="2018-10-21T03:35:26Z" finished-at="2018-10-21T03:36:02Z">
+      <class name="Test_Cases.login_test">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Test_Cases.login_test@7f9a81e8]" name="openbrowser" is-config="true" duration-ms="3242" started-at="2018-10-21T09:05:26Z" finished-at="2018-10-21T09:05:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openbrowser -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:1, instance:Test_Cases.adduser@1d057a39]" name="login" duration-ms="13803" started-at="2018-10-18T11:50:20Z" data-provider="loginjetsetter" finished-at="2018-10-18T11:50:33Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:Test_Cases.login_test@7f9a81e8]" name="login" duration-ms="31945" started-at="2018-10-21T09:05:30Z" data-provider="loginjetsetter" finished-at="2018-10-21T09:06:01Z">
           <params>
             <param index="0">
               <value>
@@ -27,47 +27,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="adduser1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:Test_Cases.adduser@1d057a39]" name="adduser1" duration-ms="21325" started-at="2018-10-18T11:50:33Z" data-provider="adduser" finished-at="2018-10-18T11:50:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Child]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Dev]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Negi]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[test101@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Test@12345]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[9654560796]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- adduser1 -->
-        <test-method status="PASS" signature="browserclose()[pri:0, instance:Test_Cases.adduser@1d057a39]" name="browserclose" is-config="true" duration-ms="0" started-at="2018-10-18T11:50:55Z" finished-at="2018-10-18T11:50:55Z">
+        <test-method status="PASS" signature="browserclose()[pri:0, instance:Test_Cases.login_test@7f9a81e8]" name="browserclose" is-config="true" duration-ms="735" started-at="2018-10-21T09:06:01Z" finished-at="2018-10-21T09:06:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
-      </class> <!-- Test_Cases.adduser -->
+      </class> <!-- Test_Cases.login_test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

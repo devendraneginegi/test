@@ -24,11 +24,12 @@ public class jetoperator_login_test {
 	 public void openbrowser()
 	 {
 		 
+
 		 String path = System.getProperty("user.dir");
-		
+			
 		 System.out.println(path);
 		 
-		 System.setProperty("webdriver.chrome.driver", path+"/src/Browser/chromedriver");
+		 System.setProperty("webdriver.chrome.driver", path+"/src/Browser/chromedriver.exe");
 
 		 driver = new ChromeDriver();
 		 
